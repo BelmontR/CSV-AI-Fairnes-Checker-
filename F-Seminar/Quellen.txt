@@ -1,0 +1,102 @@
+Scopus
+
+( TITLE-ABS-KEY ( ai  AND fair  AND adjust  AND data )  OR  TITLE-ABS-KEY ( ai  AND fairness  AND adjust  AND data )  OR  TITLE-ABS-KEY ( ai  AND reduce  AND bias  AND adjust  AND data )  OR  TITLE-ABS-KEY ( ai  AND ensure  AND fairness  AND adjust  AND data )  OR  TITLE-ABS-KEY ( ai  AND reduce  AND bias  AND data ) ) 
+
+The Regulation of Artificial Intelligence in Digital Radiology in the Scientific Literature: A Narrative Review of Reviews #-#
+https://www.scopus.com/record/display.uri?eid=2-s2.0-85140597486&origin=resultslist&sort=plf-f&src=s&st1=AI+fair+adjust+data&st2=AI+Fairness+adjust+data&searchTerms=AI+reduce+bias+data%3f%21%22*%24AI+reduce+bias+adjust+data%3f%21%22*%24AI+ensure+fairness+adjust+data%3f%21%22*%24&sid=f514255d18b6d49fd2ac665c2acb6c23&sot=b&sdt=b&sl=210&s=%28TITLE-ABS-KEY%28AI+fair+adjust+data%29+OR+TITLE-ABS-KEY%28AI+Fairness+adjust+data%29+OR+TITLE-ABS-KEY%28AI+reduce+bias+data%29+OR+TITLE-ABS-KEY%28AI+reduce+bias+adjust+data%29+OR+TITLE-ABS-KEY%28AI+ensure+fairness+adjust+data%29%29&relpos=6&citeCnt=0&searchTerm=
+
+Measuring and Mitigating Bias in AI-Chatbots #+# Bias abschwächen, Framework, Ohne KI Code Anpassung, nur für Chatbots
+https://www.scopus.com/record/display.uri?eid=2-s2.0-85130008640&origin=resultslist&sort=plf-f&src=s&st1=AI+fair+adjust+data&st2=AI+Fairness+adjust+data&nlo=&nlr=&nls=&sid=6c1d6ca43359e73e68e981b3f10e78ef&sot=b&sdt=b&sl=210&s=%28TITLE-ABS-KEY%28AI+fair+adjust+data%29+OR+TITLE-ABS-KEY%28AI+Fairness+adjust+data%29+OR+TITLE-ABS-KEY%28AI+reduce+bias+adjust+data%29+OR+TITLE-ABS-KEY%28AI+ensure+fairness+adjust+data%29+OR+TITLE-ABS-KEY%28AI+reduce+bias+data%29%29&relpos=26&citeCnt=0&searchTerm=
+
+Time to Assess Bias in Machine Learning Models for Credit Decisions #+# Bias in Kreditvergabe MLs, Überlegungen für fairer ML in dem Kontext
+https://www.scopus.com/record/display.uri?eid=2-s2.0-85130450921&origin=resultslist&sort=plf-f&src=s&st1=AI+fair+adjust+data&st2=AI+Fairness+adjust+data&searchTerms=AI+reduce+bias+adjust+data%3f%21%22*%24AI+ensure+fairness+adjust+data%3f%21%22*%24AI+reduce+bias+data%3f%21%22*%24&sid=6c1d6ca43359e73e68e981b3f10e78ef&sot=b&sdt=b&sl=210&s=%28TITLE-ABS-KEY%28AI+fair+adjust+data%29+OR+TITLE-ABS-KEY%28AI+Fairness+adjust+data%29+OR+TITLE-ABS-KEY%28AI+reduce+bias+adjust+data%29+OR+TITLE-ABS-KEY%28AI+ensure+fairness+adjust+data%29+OR+TITLE-ABS-KEY%28AI+reduce+bias+data%29%29&relpos=14&citeCnt=1&searchTerm=
+
+Bias in Artificial Intelligence Models in Financial Services #+-# Bias-Arten in KI-Modellen und -Daten in der Finanzbranche werden analysiert, Techniken zum Vermeiden von Bias. Nicht verfügbar
+https://www.scopus.com/record/display.uri?eid=2-s2.0-85137161652&origin=resultslist&sort=plf-f&src=s&st1=AI+fair+adjust+data&st2=AI+Fairness+adjust+data&searchTerms=AI+reduce+bias+adjust+data%3f%21%22*%24AI+ensure+fairness+adjust+data%3f%21%22*%24AI+reduce+bias+data%3f%21%22*%24&sid=6c1d6ca43359e73e68e981b3f10e78ef&sot=b&sdt=b&sl=210&s=%28TITLE-ABS-KEY%28AI+fair+adjust+data%29+OR+TITLE-ABS-KEY%28AI+Fairness+adjust+data%29+OR+TITLE-ABS-KEY%28AI+reduce+bias+adjust+data%29+OR+TITLE-ABS-KEY%28AI+ensure+fairness+adjust+data%29+OR+TITLE-ABS-KEY%28AI+reduce+bias+data%29%29&relpos=10&citeCnt=0&searchTerm=
+
+Managing bias in AI #+# Sehr allgemein zu Bias in KI, Methoden gegen 3 Bias-Arten werden ausformuliert
+https://www.scopus.com/record/display.uri?eid=2-s2.0-85066905886&origin=resultslist&sort=plf-f&src=s&st1=AI+fair+adjust+data&st2=AI+Fairness+adjust+data&nlo=&nlr=&nls=&sid=6c1d6ca43359e73e68e981b3f10e78ef&sot=b&sdt=b&sl=210&s=%28TITLE-ABS-KEY%28AI+fair+adjust+data%29+OR+TITLE-ABS-KEY%28AI+Fairness+adjust+data%29+OR+TITLE-ABS-KEY%28AI+reduce+bias+adjust+data%29+OR+TITLE-ABS-KEY%28AI+ensure+fairness+adjust+data%29+OR+TITLE-ABS-KEY%28AI+reduce+bias+data%29%29&relpos=66&citeCnt=24&searchTerm=
+
+Fairness in Cardiac MR Image Analysis: An Investigation of Bias Due to Data Imbalance in Deep Learning Based Segmentation #-?# (Bezieht sich auf Bildanalysen, also... eher schwer, oder?)
+https://www.scopus.com/record/display.uri?eid=2-s2.0-85116476281&origin=resultslist&sort=plf-f&src=s&st1=AI+fair+adjust+data&st2=AI+Fairness+adjust+data&nlo=&nlr=&nls=&sid=6c1d6ca43359e73e68e981b3f10e78ef&sot=b&sdt=b&sl=210&s=%28TITLE-ABS-KEY%28AI+fair+adjust+data%29+OR+TITLE-ABS-KEY%28AI+Fairness+adjust+data%29+OR+TITLE-ABS-KEY%28AI+reduce+bias+adjust+data%29+OR+TITLE-ABS-KEY%28AI+ensure+fairness+adjust+data%29+OR+TITLE-ABS-KEY%28AI+reduce+bias+data%29%29&relpos=45&citeCnt=7&searchTerm=
+
+Artificial intelligence, heuristic biases, and the optimization of health outcomes: Cautionary optimism #+?# (Abstract reicht nicht zur Beurteilung, find ich)
+https://www.scopus.com/record/display.uri?eid=2-s2.0-85118950078&origin=resultslist&sort=plf-f&src=s&st1=AI+fair+adjust+data&st2=AI+Fairness+adjust+data&nlo=&nlr=&nls=&sid=6c1d6ca43359e73e68e981b3f10e78ef&sot=b&sdt=b&sl=210&s=%28TITLE-ABS-KEY%28AI+fair+adjust+data%29+OR+TITLE-ABS-KEY%28AI+Fairness+adjust+data%29+OR+TITLE-ABS-KEY%28AI+reduce+bias+adjust+data%29+OR+TITLE-ABS-KEY%28AI+ensure+fairness+adjust+data%29+OR+TITLE-ABS-KEY%28AI+reduce+bias+data%29%29&relpos=31&citeCnt=1&searchTerm=
+
+A gendered perspective on artificial intelligence #+# Bias durch Geschlecht, Tackeln des Biases 
+https://www.scopus.com/record/display.uri?eid=2-s2.0-85061497860&origin=resultslist&sort=plf-f&src=s&st1=AI+fair+adjust+data&st2=AI+Fairness+adjust+data&nlo=&nlr=&nls=&sid=6c1d6ca43359e73e68e981b3f10e78ef&sot=b&sdt=b&sl=210&s=%28TITLE-ABS-KEY%28AI+fair+adjust+data%29+OR+TITLE-ABS-KEY%28AI+Fairness+adjust+data%29+OR+TITLE-ABS-KEY%28AI+reduce+bias+adjust+data%29+OR+TITLE-ABS-KEY%28AI+ensure+fairness+adjust+data%29+OR+TITLE-ABS-KEY%28AI+reduce+bias+data%29%29&relpos=73&citeCnt=3&searchTerm=
+
+Biased embeddings from wild data: Measuring, understanding and removing #+# Bias durch Geschlecht, Reduktion von Bias, NLP
+https://www.scopus.com/record/display.uri?eid=2-s2.0-85055681255&origin=resultslist&sort=plf-f&src=s&nlo=&nlr=&nls=&sid=a029228d7457b4e1a90685540222b86f&sot=a&sdt=a&sl=295&s=%28+TITLE-ABS-KEY+%28+ai+AND+fair+AND+adjust+AND+data+%29+OR+TITLE-ABS-KEY+%28+ai+AND+fairness+AND+adjust+AND+data+%29+OR+TITLE-ABS-KEY+%28+ai+AND+reduce+AND+bias+AND+adjust+AND+data+%29+OR+TITLE-ABS-KEY+%28+ai+AND+ensure+AND+fairness+AND+adjust+AND+data+%29+OR+TITLE-ABS-KEY+%28+ai+AND+reduce+AND+bias+AND+data+%29+%29&relpos=75&citeCnt=3&searchTerm=
+
+
+( TITLE-ABS-KEY ( fairness ) AND TITLE-ABS-KEY ( ai ) AND TITLE-ABS-KEY ( data ) OR TITLE-ABS-KEY ( "ensure fairness" ) AND TITLE-ABS-KEY ( ai ) AND TITLE-ABS-KEY ( data ) OR TITLE-ABS-KEY ( ai ) AND TITLE-ABS-KEY ( fair ) AND TITLE-ABS-KEY ( data ) AND TITLE-ABS-KEY ( manipulation ) )
+
+Attributing Fair Decisions with Attention Interventions #+# Bias Attribut Detection, Bias Verminderung, tabellarische Daten, textuelle Daten
+https://www.scopus.com/record/display.uri?eid=2-s2.0-85137615225&origin=resultslist&sort=plf-f&src=s&st1=fairness&st2=AI&searchTerms=%3f%21%22*%24&sid=76aa03a2a9a2ebeb4a28dd15bb448ca2&sot=b&sdt=b&sl=254&s=%28TITLE-ABS-KEY%28fairness%29+AND+TITLE-ABS-KEY%28AI%29+AND+TITLE-ABS-KEY%28Data%29+OR+TITLE-ABS-KEY%28%22ensure+fairness%22%29+AND+TITLE-ABS-KEY%28AI%29+AND+TITLE-ABS-KEY%28data%29+OR+TITLE-ABS-KEY%28AI%29+AND+TITLE-ABS-KEY%28Fair%29+AND+TITLE-ABS-KEY%28data%29+AND+TITLE-ABS-KEY%28manipulation%29%29&relpos=0&citeCnt=0&searchTerm=
+
+
+TITLE-ABS-KEY ( "Fair AI" ) 
+
+Designing Fair AI in Human Resource Management: Understanding Tensions Surrounding Algorithmic Evaluation and Envisioning Stakeholder-Centered Solutions #-#
+https://www.scopus.com/record/display.uri?eid=2-s2.0-85130584897&origin=resultslist&sort=plf-f&src=s&st1=%22Fair+AI%22&sid=026245f7bc5a6d15e42b9a5f281ac8a0&sot=b&sdt=b&sl=24&s=TITLE-ABS-KEY%28%22Fair+AI%22%29&relpos=10&citeCnt=2&searchTerm=
+
+Do Humans Prefer Debiased AI Algorithms? A Case Study in Career Recommendation #-?# Schwer, weiß nicht, wie ich das bewerten soll. Nicht verfügbar
+https://www.scopus.com/record/display.uri?eid=2-s2.0-85127772692&origin=resultslist&sort=plf-f&src=s&st1=%22Fair+AI%22&sid=026245f7bc5a6d15e42b9a5f281ac8a0&sot=b&sdt=b&sl=24&s=TITLE-ABS-KEY%28%22Fair+AI%22%29&relpos=12&citeCnt=2&searchTerm=
+
+AI employment decision-making: integrating the equal opportunity merit principle and explainable AI #-?# Abstract reicht zur Bewertung nicht aus. Können wir nicht nehmen, ist nicht verfügbar
+https://www.scopus.com/record/display.uri?eid=2-s2.0-85134216654&origin=resultslist&sort=plf-f&src=s&st1=%22Fair+AI%22&sid=026245f7bc5a6d15e42b9a5f281ac8a0&sot=b&sdt=b&sl=24&s=TITLE-ABS-KEY%28%22Fair+AI%22%29&relpos=16&citeCnt=0&searchTerm=
+
+Designing fair AI for managing employees in organizations: a review, critique, and design agenda #+# Fairness-Schaffung, Unfairness-Beseitigung
+https://www.scopus.com/record/display.uri?eid=2-s2.0-85082415090&origin=resultslist&sort=plf-f&src=s&st1=%22Fair+AI%22&sid=026245f7bc5a6d15e42b9a5f281ac8a0&sot=b&sdt=b&sl=24&s=TITLE-ABS-KEY%28%22Fair+AI%22%29&relpos=32&citeCnt=38&searchTerm=
+
+Introduction to AI Fairness #-, das ist ein ... Kurs?#
+https://www.scopus.com/record/display.uri?eid=2-s2.0-85105791271&origin=resultslist&sort=plf-f&src=s&st1=%22Fair+AI%22&sid=026245f7bc5a6d15e42b9a5f281ac8a0&sot=b&sdt=b&sl=24&s=TITLE-ABS-KEY%28%22Fair+AI%22%29&relpos=21&citeCnt=0&searchTerm=
+
+
+IEEE Xplore
+
+(("All Metadata":ai fair adjust data) OR ("All Metadata":ai fairness adjust data) OR ("All Metadata":ai reduce bias adjust data) OR ("All Metadata":ai ensure fairness adjust data) OR ("All Metadata": ai ensure fairness adjust data) OR ("All Metadata":ai reduce bias data))
+
+Fairness in Data Wrangling #+# 
+https://ieeexplore.ieee.org/document/9191630
+
+Participatory AI: Reducing AI Bias and Developing Socially Responsible AI in Smart Cities #-#
+https://ieeexplore.ieee.org/document/8919542
+
+Does Data Repair Lead to Fair Models? Curating Contextually Fair Data To Reduce Model Bias #+# Datenreparatur, Bias-Bekämpfung durch Stichproben
+https://ieeexplore.ieee.org/document/9706860
+
+Data Classification by Reducing Bias of Domain-Oriented Knowledge Based on Data Jackets #-#
+https://ieeexplore.ieee.org/document/8711715
+
+Ethical Chatbot Design for Reducing Negative Effects of Biased Data and Unethical Conversations #-# Zu Chatbot-latig
+https://ieeexplore.ieee.org/document/9680760
+
+Keynote: Surveillance, Power and Accountable AI Systems: Can We Craft an AI Future that Works for Everyone? #-#
+https://ieeexplore.ieee.org/document/9530871
+
+
+( TITLE-ABS-KEY ( fairness ) AND TITLE-ABS-KEY ( ai ) AND TITLE-ABS-KEY ( data ) OR TITLE-ABS-KEY ( "ensure fairness" ) AND TITLE-ABS-KEY ( ai ) AND TITLE-ABS-KEY ( data ) OR TITLE-ABS-KEY ( ai ) AND TITLE-ABS-KEY ( fair ) AND TITLE-ABS-KEY ( data ) AND TITLE-ABS-KEY ( manipulation ) )
+
+No results :(
+
+
+("All Metadata":"Fair AI")
+
+HPCFAIR: Enabling FAIR AI for HPC Applications #-#
+https://ieeexplore.ieee.org/document/9652871
+
+
+
+
+
+
+
+
+( TITLE-ABS-KEY ( ai  AND  fair  AND  adjust  AND  data )  OR  TITLE-ABS-KEY ( ai  AND  fairness  AND  adjust  AND  data )  OR  TITLE-ABS-KEY ( ai  AND  reduce  AND  bias  AND  adjust  AND  data )  OR  TITLE-ABS-KEY ( ai  AND  ensure  AND  fairness  AND  adjust  AND  data )  OR  TITLE-ABS-KEY ( ai  AND  reduce  AND  bias  AND  data )  OR  TITLE-ABS-KEY ( ai  AND  prejudice  AND  adjust  AND  data )  OR  TITLE-ABS-KEY ( ai  AND  prejudice  AND  reduce  AND  data ) ) 
+
+
+
+
+
