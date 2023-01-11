@@ -79,6 +79,13 @@ def evaluateResults(df):
 
     #print(evaDict)
 
+    #Das st jetzt hart gecodet, ist insgesamt ein bisschen hier, aber das ist egal, da wir den Code nicht abgeben. Das jetzt schön und generell zu bauen wäre jetzt ein Abfuck
+    metricCalcDict ={
+        "Sales" : [],
+        "Priv" : "",
+        "Unpriv": "",
+    }
+
     for ed in evaDict:
         for listElement in evaDict[ed]:
             #df[y] == 1: Alle, die befördert werden sollen
@@ -90,7 +97,9 @@ def evaluateResults(df):
             print(ed + "/" + listElement + ": " + str(filtDf.Sales.min()) + " ist die niedrigste Anzahl an Verkäufen, um in dieser Gruppe befördert zu werden")
             print("")
 
+            metricCalcDict["Sales"].append(filtDf.Sales.min())
 
+    print(max(metricCalcDict["Sales"]) - min(metricCalcDict["Sales"]))
 
 #endregion Methoden
 
