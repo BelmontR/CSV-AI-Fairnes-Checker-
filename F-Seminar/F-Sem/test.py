@@ -38,16 +38,17 @@ def buildTable(df, dict, stepRange):
 
 
     data = []
-    keys, values = zip(*valueDict.items())
-    for x in itertools.product(*values):
-        data.append(x)
+
         #print(str(x))
 
     with open('generated.csv', 'w', newline="") as gen:
         writer = csv.writer(gen)
 
         writer.writerow(header)
-        writer.writerows(data)
+
+        keys, values = zip(*valueDict.items())
+        for x in itertools.product(*values):
+            writer.writerow(x)
 
 
 def addColumnWithValues(df, predictions):
