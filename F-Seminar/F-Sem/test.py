@@ -8,6 +8,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.tree import DecisionTreeClassifier
 
 import matplotlib.pyplot as plt
+import random
 
 #region Attribute
 
@@ -35,33 +36,33 @@ def buildTable(df, dict, stepRange):
 
         header.append(str(c))
 
-
-    data = []
-    keys, values = zip(*valueDict.items())
-    for x in itertools.product(*values):
-        data.append(x)
-        #print(str(x))
-
     with open('generated.csv', 'w', newline="") as gen:
         writer = csv.writer(gen)
-
         writer.writerow(header)
-        writer.writerows(data)
+
+        data = []
+        keys, values = zip(*valueDict.items())
+        for x in itertools.product(*values):
+            writer.writerow(x)
+            # print(str(x))
 
 
 def addColumnWithValues(df, predictions):
     df["predictionResult"] = 0
+    df["compareValue"] = 0
     for i in range(len(df["predictionResult"])):
         df["predictionResult"][i] = predictions[i]
+        #df["compareValue"][i] =  df["Verkaeufe"][i] /  df["Monate beschaeftigt"][i]
+
 
     #region Test
     smap = {0: 'm', 1: 'w'}
     emap = {0: 'weiss', 1: 'afroamerikanisch', 2: 'asiatisch'}
     pmap = {0: "No", 1: "Yes"}
 
-    df['Geschlecht'] = df['Geschlecht'].map(smap)
-    df['Ethnie'] = df['Ethnie'].map(emap)
-    df['predictionResult'] = df['predictionResult'].map(pmap)
+    #df['Geschlecht'] = df['Geschlecht'].map(smap)
+    #df['Ethnie'] = df['Ethnie'].map(emap)
+    #df['predictionResult'] = df['predictionResult'].map(pmap)
     #endregion Test
 
     df.to_csv("generated.csv")
@@ -79,14 +80,12 @@ def evaluateResults(df):
 
     #print(evaDict)
 
-    #Das st jetzt hart gecodet, ist insgesamt ein bisschen hier, aber das ist egal, da wir den Code nicht abgeben. Das jetzt schön und generell zu bauen wäre jetzt ein Abfuck
-    metricCalcDict ={
-        "Verkaeufe" : [],
-        "Priv" : "",
-        "Unpriv": "",
-    }
+    itemsToSumUpAA = []
+    itemsToSumUpAU = []
 
     for ed in evaDict:
+        minimumAA = []
+        allAU = []
         for listElement in evaDict[ed]:
             #df[y] == 1: Alle, die befördert werden sollen
             tempDf = befDF[ed] == listElement
@@ -94,45 +93,59 @@ def evaluateResults(df):
 
             print(ed + "/" + listElement + ": " + str(len(filtDf)) + " wurden befördert")
             print(ed + "/" + listElement + ": " + str(len(filtDf) / len(befDF)) + " = Anzahl an Beförderungen aus der Gruppe / Alle Beförderungen")
-            print(ed + "/" + listElement + ": " + str(filtDf.Verkaeufe.min()) + " ist die niedrigste Anzahl an Verkäufen, um in dieser Gruppe befördert zu werden")
+            print(ed + "/" + listElement + ": " + str(filtDf.compareValue.min()) + " ist die niedrigste Verkäufe pro Monat beschäftigt-Ratio, um befördert zu werden")
             print("")
 
-            metricCalcDict["Verkaeufe"].append(filtDf.Verkaeufe.min())
+            minimumAA.append(filtDf.compareValue.min())
+            allAU.append((len(filtDf) / len(befDF)) * 100)
+        itemsToSumUpAA.append(max(minimumAA) - min(minimumAA))
+        itemsToSumUpAU.append(max(allAU) - min(allAU))
 
-    print(max(metricCalcDict["Verkaeufe"]) - min(metricCalcDict["Verkaeufe"]))
+    print("Anforderungsabstand: "+ str(sum(itemsToSumUpAA)/len(evaDict)))
+    #print(sum(itemsToSumUpAA))
+    print("Anteilsunterschied: " + str(sum(itemsToSumUpAU) / (len(evaDict) * 100)))
+
 
 #endregion Methoden
 
 
-df = pd.read_csv("TestDatenNonBias.CSV", )
+filename = "CreditSimuBalanced.csv"
+n = sum(1 for line in open(filename)) - 1 #number of records in file (excludes header)
+s = 5 #desired sample size
+skip = sorted(random.sample(range(1,n+1),n-s)) #the 0-indexed header will not be included in the skip list
+
+df = pd.read_csv(filename, skiprows=skip)
+
+#df = pd.read_csv("TestDatenHardBias.CSV", )
+
 
 #============ Kategorische Werte werden auf Zahlen gemappt ============
 
-sMap = {'m' : 0, 'w': 1}
-eMap = {'weiss' : 0, 'afroamerikanisch' : 1, 'asiatisch' : 2}
-pMap = {"n" : 0, "j" : 1}
+#sMap = {'m' : 0, 'w': 1}
+#eMap = {'weiss' : 0, 'afroamerikanisch' : 1, 'asiatisch' : 2}
+#pMap = {"n" : 0, "j" : 1}
 
-df['Geschlecht'] = df['Geschlecht'].map(sMap)
-df['Ethnie'] = df['Ethnie'].map(eMap)
-df['Gehaltserhoehung'] = df['Gehaltserhoehung'].map(pMap)
+#df['Geschlecht'] = df['Geschlecht'].map(sMap)
+#df['Ethnie'] = df['Ethnie'].map(eMap)
+#df['Gehaltserhoehung'] = df['Gehaltserhoehung'].map(pMap)
 
-features = ['Geschlecht', 'Ethnie', 'Verkaeufe', 'Monate beschaeftigt'] #Die Features sind die unabhängigen Variablen
+features = ["Mortgage","Balance","Amount Past Due","Delinquency Status","Credit Inquiry","Open Trade","Utilization","Gender","Race"] #Die Features sind die unabhängigen Variablen
 
 
 #============ Dieses Dict enthält Metainformationen über das Dataset ============
 
 
-columnTypeDictionary["numerical"].append(['Verkaeufe', 'Monate beschaeftigt'])
-columnTypeDictionary["categorie"].extend(['Ethnie', 'Geschlecht'])
+#columnTypeDictionary["numerical"].extend(['Verkaeufe', 'Monate beschaeftigt'])
+columnTypeDictionary["categorie"].extend(features)
 
-evaAttributes.append('Ethnie')
-evaAttributes.append("Geschlecht")
+evaAttributes.append('Race')
+evaAttributes.append("Gender")
 
 
 #============ Hier kommt der AI Spaß ============
 
 x = df[features]
-y = df['Gehaltserhoehung']
+y = df['Status']
 
 xTrain, xTest, yTrain, yTest =  train_test_split(x,y, test_size = 0.3, random_state = 100)
 
