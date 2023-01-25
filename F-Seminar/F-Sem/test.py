@@ -75,7 +75,7 @@ def evaluateResults(df):
         for uni in df[ea].unique().tolist():
             evaDict[ea].append(uni)
 
-    tdf = df["predictionResult"] == "Yes"
+    tdf = df["predictionResult"] == 1
     befDF = df[tdf]
 
     #print(evaDict)
@@ -91,17 +91,17 @@ def evaluateResults(df):
             tempDf = befDF[ed] == listElement
             filtDf = befDF[tempDf]
 
-            print(ed + "/" + listElement + ": " + str(len(filtDf)) + " wurden befördert")
-            print(ed + "/" + listElement + ": " + str(len(filtDf) / len(befDF)) + " = Anzahl an Beförderungen aus der Gruppe / Alle Beförderungen")
-            print(ed + "/" + listElement + ": " + str(filtDf.compareValue.min()) + " ist die niedrigste Verkäufe pro Monat beschäftigt-Ratio, um befördert zu werden")
+            print(ed + "/" + str(listElement) + ": " + str(len(filtDf)) + " wurden befördert")
+            print(ed + "/" + str(listElement) + ": " + str(len(filtDf) / len(befDF)) + " = Anzahl an Beförderungen aus der Gruppe / Alle Beförderungen")
+            #print(ed + "/" + str(listElement) + ": " + str(filtDf.compareValue.min()) + " ist die niedrigste Verkäufe pro Monat beschäftigt-Ratio, um befördert zu werden")
             print("")
 
-            minimumAA.append(filtDf.compareValue.min())
+            #minimumAA.append(filtDf.compareValue.min())
             allAU.append((len(filtDf) / len(befDF)) * 100)
-        itemsToSumUpAA.append(max(minimumAA) - min(minimumAA))
+        #itemsToSumUpAA.append(max(minimumAA) - min(minimumAA))
         itemsToSumUpAU.append(max(allAU) - min(allAU))
 
-    print("Anforderungsabstand: "+ str(sum(itemsToSumUpAA)/len(evaDict)))
+    #print("Anforderungsabstand: "+ str(sum(itemsToSumUpAA)/len(evaDict)))
     #print(sum(itemsToSumUpAA))
     print("Anteilsunterschied: " + str(sum(itemsToSumUpAU) / (len(evaDict) * 100)))
 
@@ -109,9 +109,9 @@ def evaluateResults(df):
 #endregion Methoden
 
 
-filename = "CreditSimuBalanced.csv"
+filename = "CreditSimuUnbalanced.csv"
 n = sum(1 for line in open(filename)) - 1 #number of records in file (excludes header)
-s = 5 #desired sample size
+s = 10 #desired sample size
 skip = sorted(random.sample(range(1,n+1),n-s)) #the 0-indexed header will not be included in the skip list
 
 df = pd.read_csv(filename, skiprows=skip)
