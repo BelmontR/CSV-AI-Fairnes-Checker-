@@ -116,6 +116,7 @@ skip = sorted(random.sample(range(1,n+1),n-s)) #the 0-indexed header will not be
 
 df = pd.read_csv(filename, skiprows=skip)
 
+MLdf = pd.read_csv(filename)
 #df = pd.read_csv("TestDatenHardBias.CSV", )
 
 
@@ -144,8 +145,10 @@ evaAttributes.append("Gender")
 
 #============ Hier kommt der AI Spaß ============
 
-x = df[features]
-y = df['Status']
+x_table = df[features]
+
+x = MLdf[features]
+y = MLdf['Status']
 
 xTrain, xTest, yTrain, yTest =  train_test_split(x,y, test_size = 0.3, random_state = 100)
 
@@ -160,7 +163,7 @@ y_prediction = dtree.predict(xTest)
 print("Accuracy is " + str(accuracy_score(yTest, y_prediction)*100))
 
 
-buildTable(x,columnTypeDictionary, 1)
+buildTable(x_table,columnTypeDictionary, 1)
 generated = pd.read_csv("generated.csv")
 result = dtree.predict(generated)
 
