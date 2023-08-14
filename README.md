@@ -1,4 +1,4 @@
-# CSV-AI-Fairness-Checker-
+# CSV-AI-Fairness-Checker
 Der CSV AI Fairness Checker ist ein Ansatz, mit dem man Datensätze, die in einer CSV gespeichert sind, auf Verzerrungen (Bias) und Diskriminierung überprüfen kann. Dafür wird ein Machine Learning Modell mit einem 
 Datensatz, der überprüft werden soll, trainiert. Darauf folgend wird das Modell Analysen und Tests unterzogen, über die Ergenisse werden dann Kennzahlen zur Stärke der Verzerrungen berechnet. Die Kernidee dahinter ist es, 
 potenzielle Verzerrungen eines Datensatzes auf ein Machine Learning Modell zu übertragen und dann über das Modell Rückschlüsse auf den Datensatz zu ziehen.
